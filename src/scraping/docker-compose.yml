@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  scraping:
+    build:
+      context: .
+    volumes:
+      - ../../data:/scraping/data
+    networks:
+      - scraping_network
+    container_name: scraping
+
+networks:
+  scraping_network:
+    driver: bridge

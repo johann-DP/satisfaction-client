@@ -1,0 +1,23 @@
+[2024-07-04T08:44:38.706+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-04T08:44:38.717+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker manual__2024-07-04T08:44:37.344611+00:00 [queued]>
+[2024-07-04T08:44:38.720+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker manual__2024-07-04T08:44:37.344611+00:00 [queued]>
+[2024-07-04T08:44:38.720+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-04T08:44:38.731+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_scraping_docker> on 2024-07-04 08:44:37.344611+00:00
+[2024-07-04T08:44:38.734+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=72) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-04T08:44:38.735+0000] {standard_task_runner.py:63} INFO - Started process 73 to run task
+[2024-07-04T08:44:38.735+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'run_scraping_docker', 'manual__2024-07-04T08:44:37.344611+00:00', '--job-id', '284', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmpatg1_8lx']
+[2024-07-04T08:44:38.736+0000] {standard_task_runner.py:91} INFO - Job 284: Subtask run_scraping_docker
+[2024-07-04T08:44:38.761+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.run_scraping_docker manual__2024-07-04T08:44:37.344611+00:00 [running]> on host 13d7ad0def90
+[2024-07-04T08:44:38.807+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='run_scraping_docker' AIRFLOW_CTX_EXECUTION_DATE='2024-07-04T08:44:37.344611+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-04T08:44:37.344611+00:00'
+[2024-07-04T08:44:38.807+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-04T08:44:38.831+0000] {docker.py:366} INFO - Starting docker container from image bost67dst/scraping
+[2024-07-04T08:44:53.852+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-07-04T08:44:53.852+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-04T08:44:53.853+0000] {process_utils.py:132} INFO - Sending 15 to group 73. PIDs of all processes in the group: [73]
+[2024-07-04T08:44:53.853+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 73
+[2024-07-04T08:44:53.853+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-04T08:44:53.853+0000] {docker.py:528} INFO - Stopping docker container
+[2024-07-04T08:45:04.030+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-04T08:45:04.077+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=73, status='terminated', exitcode=0, started='08:44:38') (73) terminated with exit code 0

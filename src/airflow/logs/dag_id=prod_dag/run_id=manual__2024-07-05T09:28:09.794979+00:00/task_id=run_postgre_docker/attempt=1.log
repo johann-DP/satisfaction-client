@@ -1,0 +1,76 @@
+[2024-07-05T09:28:41.616+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T09:28:41.629+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.run_postgre_docker manual__2024-07-05T09:28:09.794979+00:00 [queued]>
+[2024-07-05T09:28:41.632+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.run_postgre_docker manual__2024-07-05T09:28:09.794979+00:00 [queued]>
+[2024-07-05T09:28:41.632+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-05T09:28:41.641+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_postgre_docker> on 2024-07-05 09:28:09.794979+00:00
+[2024-07-05T09:28:41.647+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=139) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T09:28:41.647+0000] {standard_task_runner.py:63} INFO - Started process 143 to run task
+[2024-07-05T09:28:41.648+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'run_postgre_docker', 'manual__2024-07-05T09:28:09.794979+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmpcvpz72o_']
+[2024-07-05T09:28:41.648+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask run_postgre_docker
+[2024-07-05T09:28:41.671+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.run_postgre_docker manual__2024-07-05T09:28:09.794979+00:00 [running]> on host d74fc8b8969f
+[2024-07-05T09:28:41.718+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='run_postgre_docker' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T09:28:09.794979+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-05T09:28:09.794979+00:00'
+[2024-07-05T09:28:41.718+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T09:28:41.737+0000] {docker.py:493} INFO - Pulling docker image bost67dst/postgre_loading
+[2024-07-05T09:28:43.027+0000] {docker.py:507} INFO - latest: Pulling from bost67dst/postgre_loading
+[2024-07-05T09:28:43.039+0000] {docker.py:507} INFO - f11c1adaa26e: Already exists
+[2024-07-05T09:28:43.096+0000] {docker.py:507} INFO - 734a5c861b4d: Pulling fs layer
+[2024-07-05T09:28:43.096+0000] {docker.py:507} INFO - d498dc8802ee: Pulling fs layer
+[2024-07-05T09:28:43.096+0000] {docker.py:507} INFO - 0d20f43a1f0c: Pulling fs layer
+[2024-07-05T09:28:43.096+0000] {docker.py:507} INFO - 1424b642a1f1: Pulling fs layer
+[2024-07-05T09:28:43.096+0000] {docker.py:507} INFO - 6d04d9afe030: Pulling fs layer
+[2024-07-05T09:28:43.097+0000] {docker.py:507} INFO - 721fcacb3b9d: Pulling fs layer
+[2024-07-05T09:28:43.097+0000] {docker.py:507} INFO - a48063789fa1: Pulling fs layer
+[2024-07-05T09:28:43.097+0000] {docker.py:507} INFO - 5375cdd05bd7: Pulling fs layer
+[2024-07-05T09:28:43.097+0000] {docker.py:507} INFO - 6d04d9afe030: Waiting
+[2024-07-05T09:28:43.097+0000] {docker.py:507} INFO - 5375cdd05bd7: Waiting
+[2024-07-05T09:28:43.097+0000] {docker.py:507} INFO - 1424b642a1f1: Waiting
+[2024-07-05T09:28:43.097+0000] {docker.py:507} INFO - 721fcacb3b9d: Waiting
+[2024-07-05T09:28:43.097+0000] {docker.py:507} INFO - a48063789fa1: Waiting
+[2024-07-05T09:28:43.455+0000] {docker.py:507} INFO - 0d20f43a1f0c: Downloading
+[2024-07-05T09:28:43.455+0000] {docker.py:507} INFO - 0d20f43a1f0c: Verifying Checksum
+[2024-07-05T09:28:43.456+0000] {docker.py:507} INFO - 0d20f43a1f0c: Download complete
+[2024-07-05T09:28:43.483+0000] {docker.py:507} INFO - d498dc8802ee: Downloading
+[2024-07-05T09:28:43.594+0000] {docker.py:507} INFO - 734a5c861b4d: Downloading
+[2024-07-05T09:28:43.595+0000] {docker.py:507} INFO - d498dc8802ee: Verifying Checksum
+[2024-07-05T09:28:43.595+0000] {docker.py:507} INFO - d498dc8802ee: Download complete
+[2024-07-05T09:28:43.662+0000] {docker.py:507} INFO - 734a5c861b4d: Download complete
+[2024-07-05T09:28:43.663+0000] {docker.py:507} INFO - 734a5c861b4d: Extracting
+[2024-07-05T09:28:43.798+0000] {docker.py:507} INFO - 1424b642a1f1: Downloading
+[2024-07-05T09:28:43.852+0000] {docker.py:507} INFO - 734a5c861b4d: Pull complete
+[2024-07-05T09:28:43.856+0000] {docker.py:507} INFO - 1424b642a1f1: Verifying Checksum
+[2024-07-05T09:28:43.857+0000] {docker.py:507} INFO - 1424b642a1f1: Download complete
+[2024-07-05T09:28:43.876+0000] {docker.py:507} INFO - d498dc8802ee: Extracting
+[2024-07-05T09:28:44.036+0000] {docker.py:507} INFO - 6d04d9afe030: Downloading
+[2024-07-05T09:28:44.036+0000] {docker.py:507} INFO - 6d04d9afe030: Verifying Checksum
+[2024-07-05T09:28:44.036+0000] {docker.py:507} INFO - 6d04d9afe030: Download complete
+[2024-07-05T09:28:44.103+0000] {docker.py:507} INFO - 721fcacb3b9d: Downloading
+[2024-07-05T09:28:44.104+0000] {docker.py:507} INFO - 721fcacb3b9d: Download complete
+[2024-07-05T09:28:44.170+0000] {docker.py:507} INFO - d498dc8802ee: Pull complete
+[2024-07-05T09:28:44.191+0000] {docker.py:507} INFO - 0d20f43a1f0c: Extracting
+[2024-07-05T09:28:44.305+0000] {docker.py:507} INFO - 0d20f43a1f0c: Pull complete
+[2024-07-05T09:28:44.328+0000] {docker.py:507} INFO - 1424b642a1f1: Extracting
+[2024-07-05T09:28:44.332+0000] {docker.py:507} INFO - a48063789fa1: Downloading
+[2024-07-05T09:28:44.512+0000] {docker.py:507} INFO - 1424b642a1f1: Pull complete
+[2024-07-05T09:28:44.519+0000] {docker.py:507} INFO - 5375cdd05bd7: Downloading
+[2024-07-05T09:28:44.524+0000] {docker.py:507} INFO - 6d04d9afe030: Extracting
+[2024-07-05T09:28:44.582+0000] {docker.py:507} INFO - 6d04d9afe030: Pull complete
+[2024-07-05T09:28:44.604+0000] {docker.py:507} INFO - 721fcacb3b9d: Extracting
+[2024-07-05T09:28:44.679+0000] {docker.py:507} INFO - 721fcacb3b9d: Pull complete
+[2024-07-05T09:28:45.018+0000] {docker.py:507} INFO - 5375cdd05bd7: Verifying Checksum
+[2024-07-05T09:28:45.018+0000] {docker.py:507} INFO - 5375cdd05bd7: Download complete
+[2024-07-05T09:28:50.868+0000] {docker.py:507} INFO - a48063789fa1: Verifying Checksum
+[2024-07-05T09:28:50.869+0000] {docker.py:507} INFO - a48063789fa1: Download complete
+[2024-07-05T09:28:50.899+0000] {docker.py:507} INFO - a48063789fa1: Extracting
+[2024-07-05T09:28:56.711+0000] {docker.py:507} INFO - a48063789fa1: Pull complete
+[2024-07-05T09:28:56.751+0000] {docker.py:507} INFO - 5375cdd05bd7: Extracting
+[2024-07-05T09:28:57.204+0000] {docker.py:507} INFO - 5375cdd05bd7: Pull complete
+[2024-07-05T09:28:57.233+0000] {docker.py:502} INFO - Digest: sha256:e554a8981accc2af1a5313f459f87f1abefd5f7de4d0947a02d28caa402b01cf
+[2024-07-05T09:28:57.245+0000] {docker.py:502} INFO - Status: Downloaded newer image for bost67dst/postgre_loading:latest
+[2024-07-05T09:28:57.249+0000] {docker.py:366} INFO - Starting docker container from image bost67dst/postgre_loading
+[2024-07-05T09:28:58.267+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T09:28:58.278+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=prod_dag, task_id=run_postgre_docker, run_id=manual__2024-07-05T09:28:09.794979+00:00, execution_date=20240705T092809, start_date=20240705T092841, end_date=20240705T092858
+[2024-07-05T09:28:58.311+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-05T09:28:58.322+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-05T09:28:58.324+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

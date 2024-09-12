@@ -1,0 +1,18 @@
+
+version: '3.8'
+
+services:
+  mlflow_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /Users/mercier/Documents/project_root/src/mlflow_exp/mlflow_data:/app/mlflow_data
+      - /Users/mercier/Documents/project_root/data:/app/data
+      - /Users/mercier/Documents/project_root/src/mlflow_exp/scripts/experiment.py:/app/scripts/experiment.py  # Ajout du montage de volume pour experiment.py
+    ports:
+      - "5000:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 4G  # Ajustez selon vos besoins

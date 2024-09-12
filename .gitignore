@@ -1,0 +1,9 @@
+.venv/
+.idea/
+data/bank/reviews/
+log_files_dir/
+documentation/
+old_codes/
+old_data/
+data/
+src/scraping/data/

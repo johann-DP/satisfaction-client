@@ -1,0 +1,102 @@
+[2024-07-05T09:42:17.252+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T09:42:17.270+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.mlflow_learning manual__2024-07-05T09:41:56.605292+00:00 [queued]>
+[2024-07-05T09:42:17.276+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.mlflow_learning manual__2024-07-05T09:41:56.605292+00:00 [queued]>
+[2024-07-05T09:42:17.276+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-05T09:42:17.284+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): mlflow_learning> on 2024-07-05 09:41:56.605292+00:00
+[2024-07-05T09:42:17.290+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=78) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T09:42:17.290+0000] {standard_task_runner.py:63} INFO - Started process 81 to run task
+[2024-07-05T09:42:17.291+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'mlflow_learning', 'manual__2024-07-05T09:41:56.605292+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmp2vhlz_r6']
+[2024-07-05T09:42:17.292+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask mlflow_learning
+[2024-07-05T09:42:17.319+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.mlflow_learning manual__2024-07-05T09:41:56.605292+00:00 [running]> on host d1b8fc7d37d2
+[2024-07-05T09:42:17.382+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='mlflow_learning' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T09:41:56.605292+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-05T09:41:56.605292+00:00'
+[2024-07-05T09:42:17.383+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T09:42:17.394+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-07-05T09:42:17.394+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'docker exec mf-container python3 /app/scripts/extraction_features.py && docker exec mf-container python3 /app/scripts/experiment.py']
+[2024-07-05T09:42:17.403+0000] {subprocess.py:86} INFO - Output:
+[2024-07-05T09:42:17.505+0000] {subprocess.py:93} INFO - Current working directory: /app
+[2024-07-05T09:42:17.506+0000] {subprocess.py:93} INFO - Files in the current directory: ['mlflow_data', 'data', 'scripts', 'requirements.txt']
+[2024-07-05T09:42:17.506+0000] {subprocess.py:93} INFO - Traitement des fichiers dans le dossier : /app/data/bank
+[2024-07-05T09:42:17.506+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/companies/bank.json
+[2024-07-05T09:42:17.506+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/01banque-en-ligne.fr_reviews.json
+[2024-07-05T09:42:17.506+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/anyti.me_reviews.json
+[2024-07-05T09:42:17.506+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/helios.do_reviews.json
+[2024-07-05T09:42:17.506+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/www.younited-credit.com_reviews.json
+[2024-07-05T09:42:17.506+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/cibformation.fr_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/cofidis.fr_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/qonto.com_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/pixpay.eu_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/pennypet.io_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/shine.fr_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/moneywalkie.com_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/boursobank.com_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/blank.app_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/propulsebyca.fr_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/www.monabanq.com_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/fortuneo.fr_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/immopret.fr_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/www.francescpi.com_reviews.json
+[2024-07-05T09:42:17.507+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/cofidis.pt_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/green-got.com_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/bcfinance.fr_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/www.vybecard.com_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/kard.eu_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/www.lanef.com_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/britline.com_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/moneynow.fr_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/orangebank.fr_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/sumeria.eu_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/bpe.fr_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/hellobank.fr_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/www.mafrenchbank.fr_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/floapay.com_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/connectbanque.com_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/idealpret.fr_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/sofinco.fr_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/changermabanque.com_reviews.json
+[2024-07-05T09:42:17.508+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/floabank.fr_reviews.json
+[2024-07-05T09:42:17.509+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/moneco.app_reviews.json
+[2024-07-05T09:42:17.509+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/plusq1taux.com_reviews.json
+[2024-07-05T09:42:17.509+0000] {subprocess.py:93} INFO - Traitement du fichier : /app/data/bank/reviews/onlyonecard.eu_reviews.json
+[2024-07-05T09:42:17.509+0000] {subprocess.py:93} INFO - Nombre de lignes extraites : 1426
+[2024-07-05T09:42:17.509+0000] {subprocess.py:93} INFO - Fichier CSV généré à : /app/apprentissage.csv
+[2024-07-05T09:42:18.663+0000] {subprocess.py:93} INFO - /opt/spark/bin/load-spark-env.sh: line 68: ps: command not found
+[2024-07-05T09:42:19.632+0000] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2024-07-05T09:42:19.633+0000] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2024-07-05T09:42:19.736+0000] {subprocess.py:93} INFO - 24/07/05 09:42:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-07-05T09:42:21.636+0000] {subprocess.py:93} INFO - 2024/07/05 09:42:21 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO - The git executable must be specified in one of the following ways:
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO -     - be included in your $PATH
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO -     - be set via $GIT_PYTHON_GIT_EXECUTABLE
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO -     - explicitly set via git.refresh(<full-path-to-git-executable>)
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO - 
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO - All git commands will error until this is rectified.
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO - 
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO - This initial message can be silenced or aggravated in the future by setting the
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO - $GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO -     - quiet|q|silence|s|silent|none|n|0: for no message or exception
+[2024-07-05T09:42:21.637+0000] {subprocess.py:93} INFO -     - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+[2024-07-05T09:42:21.638+0000] {subprocess.py:93} INFO -     - error|e|exception|raise|r|2: for a raised exception
+[2024-07-05T09:42:21.638+0000] {subprocess.py:93} INFO - 
+[2024-07-05T09:42:21.638+0000] {subprocess.py:93} INFO - Example:
+[2024-07-05T09:42:21.638+0000] {subprocess.py:93} INFO -     export GIT_PYTHON_REFRESH=quiet
+[2024-07-05T09:42:21.638+0000] {subprocess.py:93} INFO - 
+[2024-07-05T09:42:25.129+0000] {subprocess.py:93} INFO - [Stage 0:>                                                          (0 + 1) / 1]                                                                                24/07/05 09:42:25 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+[2024-07-05T09:42:25.142+0000] {subprocess.py:93} INFO - 24/07/05 09:42:25 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.VectorBLAS
+[2024-07-05T09:42:41.436+0000] {subprocess.py:93} INFO - /usr/local/lib/python3.9/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+[2024-07-05T09:42:41.437+0000] {subprocess.py:93} INFO -   warnings.warn("Setuptools is replacing distutils.")
+[2024-07-05T09:42:41.510+0000] {subprocess.py:93} INFO - 2024/07/05 09:42:41 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: SentimentAnalysisModel, version 27
+[2024-07-05T09:42:46.572+0000] {subprocess.py:93} INFO - 2024/07/05 09:42:46 WARNING mlflow.utils.environment: Encountered an unexpected error while inferring pip requirements (model URI: runs:/2bdbfe847ba84312a60f74eec2b0e411/, flavor: spark), fall back to return ['pyspark==3.5.1']. Set logging level to DEBUG to see the full traceback.
+[2024-07-05T09:42:46.609+0000] {subprocess.py:93} INFO - 2024/07/05 09:42:46 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: SentimentAnalysisModel, version 28
+[2024-07-05T09:42:46.709+0000] {subprocess.py:93} INFO - La validation du modèle a échoué.
+[2024-07-05T09:42:46.709+0000] {subprocess.py:93} INFO - Le modèle final a été enregistré et promu en Production.
+[2024-07-05T09:42:46.709+0000] {subprocess.py:93} INFO - Script Python copié dans /app/mlflow_data/mlruns/run_202407050942
+[2024-07-05T09:42:46.709+0000] {subprocess.py:93} INFO - Dossier sparkml copié et renommé en /app/mlflow_data/mlruns/run_202407050942/MODELE_202407050942
+[2024-07-05T09:42:46.709+0000] {subprocess.py:93} INFO - Expérience terminée.
+[2024-07-05T09:42:47.497+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-05T09:42:47.498+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T09:42:47.529+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=prod_dag, task_id=mlflow_learning, run_id=manual__2024-07-05T09:41:56.605292+00:00, execution_date=20240705T094156, start_date=20240705T094217, end_date=20240705T094247
+[2024-07-05T09:42:47.558+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-05T09:42:47.569+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-05T09:42:47.571+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

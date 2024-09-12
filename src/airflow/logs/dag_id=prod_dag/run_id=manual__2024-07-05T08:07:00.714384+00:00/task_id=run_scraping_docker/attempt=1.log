@@ -1,0 +1,200 @@
+[2024-07-05T08:07:02.296+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T08:07:02.308+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker manual__2024-07-05T08:07:00.714384+00:00 [queued]>
+[2024-07-05T08:07:02.311+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker manual__2024-07-05T08:07:00.714384+00:00 [queued]>
+[2024-07-05T08:07:02.311+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-05T08:07:02.319+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_scraping_docker> on 2024-07-05 08:07:00.714384+00:00
+[2024-07-05T08:07:02.324+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=72) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T08:07:02.325+0000] {standard_task_runner.py:63} INFO - Started process 73 to run task
+[2024-07-05T08:07:02.325+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'run_scraping_docker', 'manual__2024-07-05T08:07:00.714384+00:00', '--job-id', '302', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmpwbz1bgp3']
+[2024-07-05T08:07:02.326+0000] {standard_task_runner.py:91} INFO - Job 302: Subtask run_scraping_docker
+[2024-07-05T08:07:02.353+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.run_scraping_docker manual__2024-07-05T08:07:00.714384+00:00 [running]> on host 0babcc6ad8d9
+[2024-07-05T08:07:02.408+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='run_scraping_docker' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T08:07:00.714384+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-05T08:07:00.714384+00:00'
+[2024-07-05T08:07:02.408+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T08:07:02.434+0000] {docker.py:366} INFO - Starting docker container from image bost67dst/scraping
+[2024-07-05T08:08:45.743+0000] {docker.py:436} INFO - SCRAPING START
+404 Client Error: Not Found for url: https://fr.trustpilot.com/categories/bank?page=4
+bank Companies Data extraction complete and saved to JSON.
+===================================================================================
+Reviews data extraction for all companies starts:
+===================================================================================
+
+
+*****************************************************************
+Reviews data extraction for company_id: www.younited-credit.com
+*****************************************************************
+
+
+company_id: www.younited-credit.com  page: 1
+company_id: www.younited-credit.com  page: 2
+company_id: www.younited-credit.com  page: 3
+company_id: www.younited-credit.com  page: 4
+company_id: www.younited-credit.com  page: 5
+company_id: www.younited-credit.com  page: 6
+company_id: www.younited-credit.com  page: 7
+company_id: www.younited-credit.com  page: 8
+company_id: www.younited-credit.com  page: 9
+company_id: www.younited-credit.com  page: 10
+company_id: www.younited-credit.com  page: 11
+company_id: www.younited-credit.com  page: 12
+company_id: www.younited-credit.com  page: 13
+company_id: www.younited-credit.com  page: 14
+company_id: www.younited-credit.com  page: 15
+company_id: www.younited-credit.com  page: 16
+company_id: www.younited-credit.com  page: 17
+company_id: www.younited-credit.com  page: 18
+company_id: www.younited-credit.com  page: 19
+company_id: www.younited-credit.com  page: 20
+company_id: www.younited-credit.com  page: 21
+company_id: www.younited-credit.com  page: 22
+company_id: www.younited-credit.com  page: 23
+company_id: www.younited-credit.com  page: 24
+company_id: www.younited-credit.com  page: 25
+company_id: www.younited-credit.com  page: 26
+company_id: www.younited-credit.com  page: 27
+company_id: www.younited-credit.com  page: 28
+company_id: www.younited-credit.com  page: 29
+company_id: www.younited-credit.com  page: 30
+company_id: www.younited-credit.com  page: 31
+company_id: www.younited-credit.com  page: 32
+company_id: www.younited-credit.com  page: 33
+company_id: www.younited-credit.com  page: 34
+company_id: www.younited-credit.com  page: 35
+company_id: www.younited-credit.com  page: 36
+company_id: www.younited-credit.com  page: 37
+company_id: www.younited-credit.com  page: 38
+company_id: www.younited-credit.com  page: 39
+company_id: www.younited-credit.com  page: 40
+company_id: www.younited-credit.com  page: 41
+company_id: www.younited-credit.com  page: 42
+company_id: www.younited-credit.com  page: 43
+company_id: www.younited-credit.com  page: 44
+company_id: www.younited-credit.com  page: 45
+company_id: www.younited-credit.com  page: 46
+company_id: www.younited-credit.com  page: 47
+company_id: www.younited-credit.com  page: 48
+company_id: www.younited-credit.com  page: 49
+company_id: www.younited-credit.com  page: 50
+company_id: www.younited-credit.com  page: 51
+company_id: www.younited-credit.com  page: 52
+company_id: www.younited-credit.com  page: 53
+company_id: www.younited-credit.com  page: 54
+company_id: www.younited-credit.com  page: 55
+company_id: www.younited-credit.com  page: 56
+company_id: www.younited-credit.com  page: 57
+company_id: www.younited-credit.com  page: 58
+company_id: www.younited-credit.com  page: 59
+company_id: www.younited-credit.com  page: 60
+company_id: www.younited-credit.com  page: 61
+company_id: www.younited-credit.com  page: 62
+company_id: www.younited-credit.com  page: 63
+company_id: www.younited-credit.com  page: 64
+company_id: www.younited-credit.com  page: 65
+company_id: www.younited-credit.com  page: 66
+company_id: www.younited-credit.com  page: 67
+company_id: www.younited-credit.com  page: 68
+company_id: www.younited-credit.com  page: 69
+company_id: www.younited-credit.com  page: 70
+company_id: www.younited-credit.com  page: 71
+company_id: www.younited-credit.com  page: 72
+company_id: www.younited-credit.com  page: 73
+company_id: www.younited-credit.com  page: 74
+company_id: www.younited-credit.com  page: 75
+company_id: www.younited-credit.com  page: 76
+company_id: www.younited-credit.com  page: 77
+company_id: www.younited-credit.com  page: 78
+company_id: www.younited-credit.com  page: 79
+company_id: www.younited-credit.com  page: 80
+company_id: www.younited-credit.com  page: 81
+company_id: www.younited-credit.com  page: 82
+company_id: www.younited-credit.com  page: 83
+company_id: www.younited-credit.com  page: 84
+company_id: www.younited-credit.com  page: 85
+company_id: www.younited-credit.com  page: 86
+company_id: www.younited-credit.com  page: 87
+company_id: www.younited-credit.com  page: 88
+company_id: www.younited-credit.com  page: 89
+company_id: www.younited-credit.com  page: 90
+company_id: www.younited-credit.com  page: 91
+company_id: www.younited-credit.com  page: 92
+company_id: www.younited-credit.com  page: 93
+company_id: www.younited-credit.com  page: 94
+company_id: www.younited-credit.com  page: 95
+company_id: www.younited-credit.com  page: 96
+company_id: www.younited-credit.com  page: 97
+company_id: www.younited-credit.com  page: 98
+company_id: www.younited-credit.com  page: 99
+company_id: www.younited-credit.com  page: 100
+company_id: www.younited-credit.com  page: 101
+company_id: www.younited-credit.com  page: 102
+company_id: www.younited-credit.com  page: 103
+company_id: www.younited-credit.com  page: 104
+company_id: www.younited-credit.com  page: 105
+company_id: www.younited-credit.com  page: 106
+company_id: www.younited-credit.com  page: 107
+company_id: www.younited-credit.com  page: 108
+company_id: www.younited-credit.com  page: 109
+company_id: www.younited-credit.com  page: 110
+company_id: www.younited-credit.com  page: 111
+company_id: www.younited-credit.com  page: 112
+company_id: www.younited-credit.com  page: 113
+company_id: www.younited-credit.com  page: 114
+company_id: www.younited-credit.com  page: 115
+company_id: www.younited-credit.com  page: 116
+company_id: www.younited-credit.com  page: 117
+company_id: www.younited-credit.com  page: 118
+company_id: www.younited-credit.com  page: 119
+company_id: www.younited-credit.com  page: 120
+company_id: www.younited-credit.com  page: 121
+company_id: www.younited-credit.com  page: 122
+company_id: www.younited-credit.com  page: 123
+company_id: www.younited-credit.com  page: 124
+company_id: www.younited-credit.com  page: 125
+company_id: www.younited-credit.com  page: 126
+company_id: www.younited-credit.com  page: 127
+company_id: www.younited-credit.com  page: 128
+company_id: www.younited-credit.com  page: 129
+company_id: www.younited-credit.com  page: 130
+company_id: www.younited-credit.com  page: 131
+company_id: www.younited-credit.com  page: 132
+company_id: www.younited-credit.com  page: 133
+company_id: www.younited-credit.com  page: 134
+company_id: www.younited-credit.com  page: 135
+company_id: www.younited-credit.com  page: 136
+company_id: www.younited-credit.com  page: 137
+company_id: www.younited-credit.com  page: 138
+company_id: www.younited-credit.com  page: 139
+company_id: www.younited-credit.com  page: 140
+company_id: www.younited-credit.com  page: 141
+company_id: www.younited-credit.com  page: 142
+company_id: www.younited-credit.com  page: 143
+company_id: www.younited-credit.com  page: 144
+company_id: www.younited-credit.com  page: 145
+company_id: www.younited-credit.com  page: 146
+company_id: www.younited-credit.com  page: 147
+company_id: www.younited-credit.com  page: 148
+company_id: www.younited-credit.com  page: 149
+company_id: www.younited-credit.com  page: 150
+company_id: www.younited-credit.com  page: 151
+company_id: www.younited-credit.com  page: 152
+company_id: www.younited-credit.com  page: 153
+company_id: www.younited-credit.com  page: 154
+company_id: www.younited-credit.com  page: 155
+company_id: www.younited-credit.com  page: 156
+company_id: www.younited-credit.com  page: 157
+company_id: www.younited-credit.com  page: 158
+company_id: www.younited-credit.com  page: 159
+company_id: www.younited-credit.com  page: 160
+company_id: www.younited-credit.com  page: 161
+company_id: www.younited-credit.com  page: 162
+company_id: www.younited-credit.com  page: 163
+company_id: www.younited-credit.com  page: 164
+[2024-07-05T08:11:24.522+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-07-05T08:11:24.523+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-05T08:11:24.523+0000] {process_utils.py:132} INFO - Sending 15 to group 73. PIDs of all processes in the group: [73]
+[2024-07-05T08:11:24.524+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 73
+[2024-07-05T08:11:24.524+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-05T08:11:24.524+0000] {docker.py:528} INFO - Stopping docker container
+[2024-07-05T08:11:34.746+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T08:11:34.786+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=73, status='terminated', exitcode=0, started='08:07:01') (73) terminated with exit code 0

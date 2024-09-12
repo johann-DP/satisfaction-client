@@ -1,0 +1,5 @@
+id: HN38MJAB3LW2OhfAdn0Z, text: Une expérience facile et très utile, prediction: 5.0
+id: Hd38MJAB3LW2OhfAdn0Z, text: La conseillère a répondu à toutes mes question avec beaucoup de sympathie. Au top, prediction: 5.0
+id: Ht38MJAB3LW2OhfAdn0Z, text: Orange bank sont très sérieux très bonne expérience, prediction: 5.0
+id: H938MJAB3LW2OhfAdn0Z, text: Pas de soucis . Prélèvements réguliers, prediction: 5.0
+id: IN38MJAB3LW2OhfAdn0Z, text: Très rapidement et efficacité, prediction: 5.0

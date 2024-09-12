@@ -1,0 +1,13 @@
+beautifulsoup4==4.12.3
+docker_py==1.10.6
+elasticsearch==8.14.0
+fastapi==0.111.0
+graphviz==0.20.3
+mlflow==2.14.1
+nltk==3.8.1
+pandas==2.2.2
+psycopg2_binary==2.9.9
+pydantic==2.8.0
+pyspark==3.5.1
+Requests==2.32.3
+uvicorn==0.30.1

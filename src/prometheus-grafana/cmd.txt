@@ -1,0 +1,8 @@
+cd ../elastic
+docker-compose up -d
+
+cd ../prometheus-grafana
+docker-compose up
+
+metrics to use 
+elasticsearch_node_stats_up

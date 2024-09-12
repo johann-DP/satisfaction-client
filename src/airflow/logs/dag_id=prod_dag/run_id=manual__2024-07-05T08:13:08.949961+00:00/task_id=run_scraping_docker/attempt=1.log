@@ -1,0 +1,478 @@
+[2024-07-05T08:13:09.327+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T08:13:09.341+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker manual__2024-07-05T08:13:08.949961+00:00 [queued]>
+[2024-07-05T08:13:09.345+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker manual__2024-07-05T08:13:08.949961+00:00 [queued]>
+[2024-07-05T08:13:09.345+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-05T08:13:09.355+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_scraping_docker> on 2024-07-05 08:13:08.949961+00:00
+[2024-07-05T08:13:09.362+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=160) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T08:13:09.363+0000] {standard_task_runner.py:63} INFO - Started process 161 to run task
+[2024-07-05T08:13:09.363+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'run_scraping_docker', 'manual__2024-07-05T08:13:08.949961+00:00', '--job-id', '304', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmpp_zxw4y8']
+[2024-07-05T08:13:09.363+0000] {standard_task_runner.py:91} INFO - Job 304: Subtask run_scraping_docker
+[2024-07-05T08:13:09.393+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.run_scraping_docker manual__2024-07-05T08:13:08.949961+00:00 [running]> on host 0babcc6ad8d9
+[2024-07-05T08:13:09.452+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='run_scraping_docker' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T08:13:08.949961+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-05T08:13:08.949961+00:00'
+[2024-07-05T08:13:09.452+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T08:13:09.473+0000] {docker.py:366} INFO - Starting docker container from image bost67dst/scraping_light
+[2024-07-05T08:13:30.073+0000] {docker.py:436} INFO - SCRAPING START
+bank Companies Data extraction complete and saved to JSON.
+===================================================================================
+Reviews data extraction for all companies starts:
+===================================================================================
+
+
+*****************************************************************
+Reviews data extraction for company_id: www.younited-credit.com
+*****************************************************************
+
+
+company_id: www.younited-credit.com  page: 1
+company_id: www.younited-credit.com  page: 2
+
+
+Company data extraction time duration : 0.9955830574035645 seconds for 2 pages
+Reviews Data extraction for company_id www.younited-credit.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: cibformation.fr
+*****************************************************************
+
+
+company_id: cibformation.fr  page: 1
+company_id: cibformation.fr  page: 2
+
+
+Company data extraction time duration : 0.7944924831390381 seconds for 2 pages
+Reviews Data extraction for company_id cibformation.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: cofidis.fr
+*****************************************************************
+
+
+company_id: cofidis.fr  page: 1
+company_id: cofidis.fr  page: 2
+
+
+Company data extraction time duration : 0.8762998580932617 seconds for 2 pages
+Reviews Data extraction for company_id cofidis.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: qonto.com
+*****************************************************************
+
+
+company_id: qonto.com  page: 1
+company_id: qonto.com  page: 2
+
+
+Company data extraction time duration : 1.2843661308288574 seconds for 2 pages
+Reviews Data extraction for company_id qonto.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: pixpay.eu
+*****************************************************************
+
+
+company_id: pixpay.eu  page: 1
+company_id: pixpay.eu  page: 2
+
+
+Company data extraction time duration : 0.7751522064208984 seconds for 2 pages
+Reviews Data extraction for company_id pixpay.eu complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: pennypet.io
+*****************************************************************
+
+
+company_id: pennypet.io  page: 1
+company_id: pennypet.io  page: 2
+
+
+Company data extraction time duration : 0.616379976272583 seconds for 2 pages
+Reviews Data extraction for company_id pennypet.io complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: shine.fr
+*****************************************************************
+
+
+company_id: shine.fr  page: 1
+company_id: shine.fr  page: 2
+
+
+Company data extraction time duration : 1.0181267261505127 seconds for 2 pages
+Reviews Data extraction for company_id shine.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: moneywalkie.com
+*****************************************************************
+
+
+company_id: moneywalkie.com  page: 1
+company_id: moneywalkie.com  page: 2
+
+
+Company data extraction time duration : 1.2795543670654297 seconds for 2 pages
+Reviews Data extraction for company_id moneywalkie.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: anyti.me
+*****************************************************************
+
+
+company_id: anyti.me  page: 1
+company_id: anyti.me  page: 2
+
+
+Company data extraction time duration : 0.9229857921600342 seconds for 2 pages
+Reviews Data extraction for company_id anyti.me complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: boursobank.com
+*****************************************************************
+
+
+company_id: boursobank.com  page: 1
+company_id: boursobank.com  page: 2
+
+
+Company data extraction time duration : 0.9888665676116943 seconds for 2 pages
+Reviews Data extraction for company_id boursobank.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: blank.app
+*****************************************************************
+
+
+company_id: blank.app  page: 1
+company_id: blank.app  page: 2
+
+
+Company data extraction time duration : 1.841618299484253 seconds for 2 pages
+Reviews Data extraction for company_id blank.app complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: propulsebyca.fr
+*****************************************************************
+
+
+company_id: propulsebyca.fr  page: 1
+company_id: propulsebyca.fr  page: 2
+
+
+Company data extraction time duration : 1.1274101734161377 seconds for 2 pages
+Reviews Data extraction for company_id propulsebyca.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: www.monabanq.com
+*****************************************************************
+
+
+company_id: www.monabanq.com  page: 1
+company_id: www.monabanq.com  page: 2
+
+
+Company data extraction time duration : 1.0829837322235107 seconds for 2 pages
+Reviews Data extraction for company_id www.monabanq.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: fortuneo.fr
+*****************************************************************
+
+
+company_id: fortuneo.fr  page: 1
+company_id: fortuneo.fr  page: 2
+
+
+Company data extraction time duration : 0.8906960487365723 seconds for 2 pages
+Reviews Data extraction for company_id fortuneo.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: helios.do
+*****************************************************************
+
+
+company_id: helios.do  page: 1
+company_id: helios.do  page: 2
+
+
+Company data extraction time duration : 1.058469295501709 seconds for 2 pages
+Reviews Data extraction for company_id helios.do complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: immopret.fr
+*****************************************************************
+
+
+company_id: immopret.fr  page: 1
+company_id: immopret.fr  page: 2
+
+
+Company data extraction time duration : 1.0795409679412842 seconds for 2 pages
+Reviews Data extraction for company_id immopret.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: www.francescpi.com
+*****************************************************************
+
+
+company_id: www.francescpi.com  page: 1
+company_id: www.francescpi.com  page: 2
+
+
+Company data extraction time duration : 0.7207167148590088 seconds for 2 pages
+Reviews Data extraction for company_id www.francescpi.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: cofidis.pt
+*****************************************************************
+
+
+company_id: cofidis.pt  page: 1
+company_id: cofidis.pt  page: 2
+
+
+Company data extraction time duration : 0.8901722431182861 seconds for 2 pages
+Reviews Data extraction for company_id cofidis.pt complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: 01banque-en-ligne.fr
+*****************************************************************
+
+
+company_id: 01banque-en-ligne.fr  page: 1
+company_id: 01banque-en-ligne.fr  page: 2
+
+
+Company data extraction time duration : 0.821791410446167 seconds for 2 pages
+[2024-07-05T08:13:46.570+0000] {docker.py:436} INFO - Reviews Data extraction for company_id 01banque-en-ligne.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: green-got.com
+*****************************************************************
+
+
+company_id: green-got.com  page: 1
+company_id: green-got.com  page: 2
+
+
+Company data extraction time duration : 1.041783332824707 seconds for 2 pages
+Reviews Data extraction for company_id green-got.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: bcfinance.fr
+*****************************************************************
+
+
+company_id: bcfinance.fr  page: 1
+company_id: bcfinance.fr  page: 2
+
+
+Company data extraction time duration : 0.8754024505615234 seconds for 2 pages
+Reviews Data extraction for company_id bcfinance.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: www.vybecard.com
+*****************************************************************
+
+
+company_id: www.vybecard.com  page: 1
+company_id: www.vybecard.com  page: 2
+
+
+Company data extraction time duration : 1.1205201148986816 seconds for 2 pages
+Reviews Data extraction for company_id www.vybecard.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: kard.eu
+*****************************************************************
+
+
+company_id: kard.eu  page: 1
+company_id: kard.eu  page: 2
+
+
+Company data extraction time duration : 0.7081222534179688 seconds for 2 pages
+Reviews Data extraction for company_id kard.eu complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: www.lanef.com
+*****************************************************************
+
+
+company_id: www.lanef.com  page: 1
+company_id: www.lanef.com  page: 2
+
+
+Company data extraction time duration : 0.6858234405517578 seconds for 2 pages
+Reviews Data extraction for company_id www.lanef.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: britline.com
+*****************************************************************
+
+
+company_id: britline.com  page: 1
+404 Client Error: Not Found for url: https://fr.trustpilot.com/review/britline.com?page=2&sort=recency
+page_data = {'error': '404 Client Error: Not Found for url: https://fr.trustpilot.com/review/britline.com?page=2&sort=recency'}   False
+
+
+Company data extraction time duration : 0.7491312026977539 seconds for 1 pages
+Reviews Data extraction for company_id britline.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: moneynow.fr
+*****************************************************************
+
+
+company_id: moneynow.fr  page: 1
+404 Client Error: Not Found for url: https://fr.trustpilot.com/review/moneynow.fr?page=2&sort=recency
+page_data = {'error': '404 Client Error: Not Found for url: https://fr.trustpilot.com/review/moneynow.fr?page=2&sort=recency'}   False
+
+
+Company data extraction time duration : 0.5367584228515625 seconds for 1 pages
+Reviews Data extraction for company_id moneynow.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: orangebank.fr
+*****************************************************************
+
+
+company_id: orangebank.fr  page: 1
+company_id: orangebank.fr  page: 2
+
+
+Company data extraction time duration : 0.8252835273742676 seconds for 2 pages
+Reviews Data extraction for company_id orangebank.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: sumeria.eu
+*****************************************************************
+
+
+company_id: sumeria.eu  page: 1
+company_id: sumeria.eu  page: 2
+
+
+Company data extraction time duration : 0.6308894157409668 seconds for 2 pages
+Reviews Data extraction for company_id sumeria.eu complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: bpe.fr
+*****************************************************************
+
+
+company_id: bpe.fr  page: 1
+company_id: bpe.fr  page: 2
+
+
+Company data extraction time duration : 0.7574315071105957 seconds for 2 pages
+Reviews Data extraction for company_id bpe.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: hellobank.fr
+*****************************************************************
+
+
+company_id: hellobank.fr  page: 1
+company_id: hellobank.fr  page: 2
+
+
+Company data extraction time duration : 1.2627153396606445 seconds for 2 pages
+Reviews Data extraction for company_id hellobank.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: www.mafrenchbank.fr
+*****************************************************************
+
+
+company_id: www.mafrenchbank.fr  page: 1
+company_id: www.mafrenchbank.fr  page: 2
+
+
+Company data extraction time duration : 2.069849967956543 seconds for 2 pages
+Reviews Data extraction for company_id www.mafrenchbank.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: floapay.com
+*****************************************************************
+
+
+company_id: floapay.com  page: 1
+company_id: floapay.com  page: 2
+
+
+Company data extraction time duration : 0.8700330257415771 seconds for 2 pages
+Reviews Data extraction for company_id floapay.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: connectbanque.com
+*****************************************************************
+
+
+company_id: connectbanque.com  page: 1
+company_id: connectbanque.com  page: 2
+
+
+Company data extraction time duration : 2.5099637508392334 seconds for 2 pages
+Reviews Data extraction for company_id connectbanque.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: idealpret.fr
+*****************************************************************
+
+
+company_id: idealpret.fr  page: 1
+404 Client Error: Not Found for url: https://fr.trustpilot.com/review/idealpret.fr?page=2&sort=recency
+page_data = {'error': '404 Client Error: Not Found for url: https://fr.trustpilot.com/review/idealpret.fr?page=2&sort=recency'}   False
+
+
+Company data extraction time duration : 0.5163319110870361 seconds for 1 pages
+Reviews Data extraction for company_id idealpret.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: sofinco.fr
+*****************************************************************
+
+
+company_id: sofinco.fr  page: 1
+company_id: sofinco.fr  page: 2
+
+
+Company data extraction time duration : 0.7838740348815918 seconds for 2 pages
+Reviews Data extraction for company_id sofinco.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: changermabanque.com
+*****************************************************************
+
+
+company_id: changermabanque.com  page: 1
+404 Client Error: Not Found for url: https://fr.trustpilot.com/review/changermabanque.com?page=2&sort=recency
+page_data = {'error': '404 Client Error: Not Found for url: https://fr.trustpilot.com/review/changermabanque.com?page=2&sort=recency'}   False
+
+
+Company data extraction time duration : 0.5526556968688965 seconds for 1 pages
+Reviews Data extraction for company_id changermabanque.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: floabank.fr
+[2024-07-05T08:13:50.144+0000] {docker.py:436} INFO - *****************************************************************
+
+
+company_id: floabank.fr  page: 1
+company_id: floabank.fr  page: 2
+
+
+Company data extraction time duration : 1.4811749458312988 seconds for 2 pages
+Reviews Data extraction for company_id floabank.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: moneco.app
+*****************************************************************
+
+
+company_id: moneco.app  page: 1
+company_id: moneco.app  page: 2
+
+
+Company data extraction time duration : 0.8524196147918701 seconds for 2 pages
+Reviews Data extraction for company_id moneco.app complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: plusq1taux.com
+*****************************************************************
+
+
+company_id: plusq1taux.com  page: 1
+404 Client Error: Not Found for url: https://fr.trustpilot.com/review/plusq1taux.com?page=2&sort=recency
+page_data = {'error': '404 Client Error: Not Found for url: https://fr.trustpilot.com/review/plusq1taux.com?page=2&sort=recency'}   False
+
+
+Company data extraction time duration : 0.4425053596496582 seconds for 1 pages
+Reviews Data extraction for company_id plusq1taux.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: onlyonecard.eu
+*****************************************************************
+
+
+company_id: onlyonecard.eu  page: 1
+company_id: onlyonecard.eu  page: 2
+
+
+Company data extraction time duration : 0.7973296642303467 seconds for 2 pages
+Reviews Data extraction for company_id onlyonecard.eu complete and saved to JSON.
+
+
+===================================================================================
+CompleteCompanies data extraction time duration : 39.13781523704529 seconds
+Reviews data extraction for all companies ends
+===================================================================================
+[2024-07-05T08:13:50.327+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T08:13:50.340+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=prod_dag, task_id=run_scraping_docker, run_id=manual__2024-07-05T08:13:08.949961+00:00, execution_date=20240705T081308, start_date=20240705T081309, end_date=20240705T081350
+[2024-07-05T08:13:50.370+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-05T08:13:50.384+0000] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2024-07-05T08:13:50.386+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.NGram","timestamp":1715268667278,"sparkVersion":"3.5.1","uid":"NGram_ff936e01c6fa","paramMap":{"inputCol":"MeaningfulWords","n":2,"outputCol":"bigrams"},"defaultParamMap":{"n":2,"outputCol":"NGram_ff936e01c6fa__output"}}

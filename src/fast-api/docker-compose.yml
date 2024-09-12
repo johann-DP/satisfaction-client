@@ -1,0 +1,41 @@
+
+
+
+
+# services:
+#   fastapi:
+#     build: .
+#     ports:
+#       - "8000:8000"
+#     environment:
+#       - ELASTIC_ADDRESS=http://es-container:9200
+#     volumes:
+#       - "/Users/mercier/Documents/projet_DST_satisfaction_client-main4/src/fast-api/modele_V1:/app/modele_V1:rw"
+#       - "/Users/mercier/Documents/projet_DST_satisfaction_client-main4/src/fast-api:/app/predictions:rw"
+#     networks:
+#       - es-net
+
+# networks:
+#   es-net:
+#     external: true
+
+
+version: '3'
+services:
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ELASTIC_ADDRESS=http://es-container:9200
+    volumes:
+      - "./modele_V1:/app/modele_V1:rw"
+      - "./predictions:/app/predictions:rw"
+    networks:
+      - es-net
+
+networks:
+  es-net:
+    name: elastic_es-net
+    external: true
+  

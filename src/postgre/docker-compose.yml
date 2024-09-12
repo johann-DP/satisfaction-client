@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:14
+    container_name: postgres
+    environment:
+      POSTGRES_DB: BankDB
+      POSTGRES_USER: dev_team_SC
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  postgre_app:
+    build:
+      context: ../../
+      dockerfile: src/postgre/Dockerfile
+    depends_on:
+      - postgres
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=BankDB
+      - DB_USER=dev_team_SC
+      - DB_PASSWORD=password
+    volumes:
+      - ../../data/bank/companies:/app/data/bank/companies
+
+volumes:
+  postgres_data:

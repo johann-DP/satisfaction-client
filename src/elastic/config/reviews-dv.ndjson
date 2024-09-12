@@ -1,0 +1,2 @@
+{"attributes":{"fieldAttrs":"{}","fields":"[]","runtimeFieldMap":"{}","timeFieldName":"","title":"reviews","typeMeta":"{}"},"coreMigrationVersion":"8.1.2","id":"reviews-dv","migrationVersion":{"index-pattern":"8.0.0"},"references":[],"sort":[1718465859732,81],"type":"index-pattern","updated_at":"2024-06-15T15:37:39.732Z","version":"WzcyMywyXQ=="}
+{"excludedObjects":[],"excludedObjectsCount":0,"exportedCount":1,"missingRefCount":0,"missingReferences":[]}

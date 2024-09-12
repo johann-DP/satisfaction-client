@@ -1,0 +1,65 @@
+[2024-07-05T10:51:44.944+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T10:51:44.959+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.run_elastic_docker manual__2024-07-05T10:51:33.327941+00:00 [queued]>
+[2024-07-05T10:51:44.964+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.run_elastic_docker manual__2024-07-05T10:51:33.327941+00:00 [queued]>
+[2024-07-05T10:51:44.964+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-05T10:51:44.973+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_elastic_docker> on 2024-07-05 10:51:33.327941+00:00
+[2024-07-05T10:51:44.980+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=429) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T10:51:44.981+0000] {standard_task_runner.py:63} INFO - Started process 434 to run task
+[2024-07-05T10:51:44.982+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'run_elastic_docker', 'manual__2024-07-05T10:51:33.327941+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmp637tl6_n']
+[2024-07-05T10:51:44.983+0000] {standard_task_runner.py:91} INFO - Job 27: Subtask run_elastic_docker
+[2024-07-05T10:51:45.013+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.run_elastic_docker manual__2024-07-05T10:51:33.327941+00:00 [running]> on host 39db74c4aadf
+[2024-07-05T10:51:45.064+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='run_elastic_docker' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T10:51:33.327941+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-05T10:51:33.327941+00:00'
+[2024-07-05T10:51:45.065+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T10:51:45.092+0000] {docker.py:366} INFO - Starting docker container from image bost67dst/elastic_loading:latest
+[2024-07-05T10:51:47.753+0000] {docker.py:436} INFO - Suppression de l'index reviews ...True
+Contrôle de création de l'index : True
+Dossier des fichiers de reviews à importer :  /src/../data/bank/reviews
+Import de www.younited-credit.com ... 40 document(s) de l'entreprise www.younited-credit.com importé(s) !
+Import de cibformation.fr ... 40 document(s) de l'entreprise cibformation.fr importé(s) !
+Import de cofidis.fr ... 40 document(s) de l'entreprise cofidis.fr importé(s) !
+Import de qonto.com ... 40 document(s) de l'entreprise qonto.com importé(s) !
+Import de pixpay.eu ... 40 document(s) de l'entreprise pixpay.eu importé(s) !
+Import de pennypet.io ... 40 document(s) de l'entreprise pennypet.io importé(s) !
+Import de shine.fr ... 40 document(s) de l'entreprise shine.fr importé(s) !
+Import de moneywalkie.com ... 40 document(s) de l'entreprise moneywalkie.com importé(s) !
+Import de anyti.me ... 40 document(s) de l'entreprise anyti.me importé(s) !
+Import de boursobank.com ... 40 document(s) de l'entreprise boursobank.com importé(s) !
+Import de blank.app ... 40 document(s) de l'entreprise blank.app importé(s) !
+Import de propulsebyca.fr ... 40 document(s) de l'entreprise propulsebyca.fr importé(s) !
+Import de www.monabanq.com ... 40 document(s) de l'entreprise www.monabanq.com importé(s) !
+Import de fortuneo.fr ... 40 document(s) de l'entreprise fortuneo.fr importé(s) !
+Import de helios.do ... 40 document(s) de l'entreprise helios.do importé(s) !
+Import de immopret.fr ... 40 document(s) de l'entreprise immopret.fr importé(s) !
+Import de www.francescpi.com ... 40 document(s) de l'entreprise www.francescpi.com importé(s) !
+Import de cofidis.pt ... 40 document(s) de l'entreprise cofidis.pt importé(s) !
+Import de 01banque-en-ligne.fr ... 40 document(s) de l'entreprise 01banque-en-ligne.fr importé(s) !
+Import de green-got.com ... 40 document(s) de l'entreprise green-got.com importé(s) !
+Import de bcfinance.fr ... 40 document(s) de l'entreprise bcfinance.fr importé(s) !
+Import de www.vybecard.com ... 40 document(s) de l'entreprise www.vybecard.com importé(s) !
+Import de kard.eu ... 40 document(s) de l'entreprise kard.eu importé(s) !
+Import de www.lanef.com ... 40 document(s) de l'entreprise www.lanef.com importé(s) !
+Import de britline.com ... 1 document(s) de l'entreprise britline.com importé(s) !
+Import de moneynow.fr ... 12 document(s) de l'entreprise moneynow.fr importé(s) !
+Import de orangebank.fr ... 40 document(s) de l'entreprise orangebank.fr importé(s) !
+Import de sumeria.eu ... 40 document(s) de l'entreprise sumeria.eu importé(s) !
+Import de bpe.fr ... 40 document(s) de l'entreprise bpe.fr importé(s) !
+Import de hellobank.fr ... 40 document(s) de l'entreprise hellobank.fr importé(s) !
+Import de www.mafrenchbank.fr ... 40 document(s) de l'entreprise www.mafrenchbank.fr importé(s) !
+Import de floapay.com ... 40 document(s) de l'entreprise floapay.com importé(s) !
+Import de connectbanque.com ... 40 document(s) de l'entreprise connectbanque.com importé(s) !
+Import de idealpret.fr ... 7 document(s) de l'entreprise idealpret.fr importé(s) !
+Import de sofinco.fr ... 40 document(s) de l'entreprise sofinco.fr importé(s) !
+Import de changermabanque.com ... 2 document(s) de l'entreprise changermabanque.com importé(s) !
+Import de floabank.fr ... 40 document(s) de l'entreprise floabank.fr importé(s) !
+Import de moneco.app ... 31 document(s) de l'entreprise moneco.app importé(s) !
+Import de plusq1taux.com ... 18 document(s) de l'entreprise plusq1taux.com importé(s) !
+Import de onlyonecard.eu ... 35 document(s) de l'entreprise onlyonecard.eu importé(s) !
+Post DataView id reviews-dv, status code = 200
+Post dashboards, status code = 200
+[2024-07-05T10:51:47.945+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T10:51:47.959+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=prod_dag, task_id=run_elastic_docker, run_id=manual__2024-07-05T10:51:33.327941+00:00, execution_date=20240705T105133, start_date=20240705T105144, end_date=20240705T105147
+[2024-07-05T10:51:48.000+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-05T10:51:48.012+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-05T10:51:48.015+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

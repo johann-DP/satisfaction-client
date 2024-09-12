@@ -1,0 +1,214 @@
+{
+  "settings" : {
+    "analysis" : {
+      "analyzer" : {
+        "reviews_analyzer" : {
+            "type" : "standard",
+            "stopwords" : "_french_"
+        }
+      }
+    }
+  },
+  "mappings" : {
+    "properties" : {
+      "consumer" : {
+        "properties" : {
+        "countryCode" : {
+            "type" : "text",
+            "fields" : {
+            "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+            }
+            }
+        },
+        "displayName" : {
+            "type" : "text",
+            "fields" : {
+            "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+            }
+            }
+        },
+        "hasImage" : {
+            "type" : "boolean"
+        },
+        "id" : {
+            "type" : "text",
+            "fields" : {
+            "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+            }
+            }
+        },
+        "imageUrl" : {
+            "type" : "text",
+            "fields" : {
+            "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+            }
+            }
+        },
+        "isVerified" : {
+            "type" : "boolean"
+        },
+        "numberOfReviews" : {
+            "type" : "long"
+        }
+        }
+      },
+      "consumersReviewCountOnSameDomain" : {
+        "type" : "long"
+      },
+      "dates" : {
+        "properties" : {
+        "experiencedDate" : {
+            "type" : "date",
+            "format" : "strict_date_optional_time"
+          },
+          "publishedDate" : {
+            "type" : "date",
+            "format" : "strict_date_optional_time"
+          },
+          "updatedDate" : {
+            "type" : "date",
+            "format" : "strict_date_optional_time"
+          }
+        }
+      },
+      "filtered" : {
+        "type" : "boolean"
+      },
+      "hasUnhandledReports" : {
+        "type" : "boolean"
+      },
+      "id" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
+          } 
+        }
+      },
+      "identifyingName" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+          }
+        }
+      },
+      "labels" : {
+          "properties" : {
+            "verification" : {
+                "properties" : {
+                "createdDateTime" : {
+                  "type" : "date",
+                  "format" : "strict_date_optional_time"
+                },
+                "hasDachExclusion" : {
+                  "type" : "boolean"
+                },
+                "isVerified" : {
+                  "type" : "boolean"
+                },
+                "reviewSourceName" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                    }
+                  }
+                },
+                "verificationLevel" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                    }
+                  }
+                },
+                "verificationSource" : {
+                  "type" : "text",
+                  "fields" : {
+                    "keyword" : {
+                        "type" : "keyword",
+                        "ignore_above" : 256
+                    }
+                  }
+                }
+              }
+            }
+          }
+      },
+      "language" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+          }
+        }
+      },
+      "likes" : {
+        "type" : "long"
+      },
+      "pending" : {
+        "type" : "boolean"
+      },
+      "rating" : {
+        "type" : "long"
+      },
+      "reply" : {
+        "properties" : {
+          "message" : {
+            "type" : "text",
+            "fields" : {
+            "keyword" : {
+                "type" : "keyword",
+                "ignore_above" : 256
+              }
+            }
+          },
+          "publishedDate" : {
+            "type" : "date",
+            "format" : "strict_date_optional_time"
+          },
+          "updatedDate" : {
+            "type" : "date",
+            "format" : "strict_date_optional_time"
+          }
+        }
+      },
+      "text" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
+          }
+        },
+        "analyzer" : "reviews_analyzer",
+        "fielddata" : true
+      },
+      "title" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          },
+          "analyzer" : "reviews_analyzer",
+          "fielddata" : true
+      }
+    }
+  }
+}

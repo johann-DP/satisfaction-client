@@ -1,0 +1,91 @@
+[2024-07-04T08:44:15.165+0000] {processor.py:161} INFO - Started process (PID=47) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:44:15.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:44:15.166+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:44:15.166+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:44:15.176+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:44:15.301+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:44:15.301+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:44:15.310+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:44:15.310+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:44:15.319+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.157 seconds
+[2024-07-04T08:44:45.597+0000] {processor.py:161} INFO - Started process (PID=58) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:44:45.605+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:44:45.606+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:44:45.606+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:44:45.611+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:44:45.630+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:44:45.630+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:44:45.644+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:44:45.644+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:44:45.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.060 seconds
+[2024-07-04T08:45:15.837+0000] {processor.py:161} INFO - Started process (PID=69) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:45:15.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:45:15.847+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:45:15.847+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:45:15.853+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:45:15.866+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:45:15.866+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:45:15.876+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:45:15.876+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:45:15.886+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.052 seconds
+[2024-07-04T08:45:46.069+0000] {processor.py:161} INFO - Started process (PID=80) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:45:46.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:45:46.078+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:45:46.078+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:45:46.083+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:45:46.098+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:45:46.098+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:45:46.107+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:45:46.107+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:45:46.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.051 seconds
+[2024-07-04T08:46:16.301+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:46:16.301+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:46:16.302+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:46:16.302+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:46:16.307+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:46:16.322+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:46:16.322+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:46:16.332+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:46:16.332+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:46:16.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.044 seconds
+[2024-07-04T08:46:46.494+0000] {processor.py:161} INFO - Started process (PID=102) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:46:46.494+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:46:46.495+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:46:46.495+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:46:46.500+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:46:46.514+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:46:46.514+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:46:46.523+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:46:46.523+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:46:46.532+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.041 seconds
+[2024-07-04T08:47:16.674+0000] {processor.py:161} INFO - Started process (PID=113) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:47:16.682+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:47:16.683+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:47:16.683+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:47:16.688+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:47:16.703+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:47:16.702+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:47:16.712+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:47:16.712+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:47:16.722+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.051 seconds
+[2024-07-04T08:47:46.906+0000] {processor.py:161} INFO - Started process (PID=124) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:47:46.915+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:47:46.915+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:47:46.915+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:47:46.920+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:47:46.935+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:47:46.935+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:47:46.945+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:47:46.945+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:47:46.954+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.051 seconds
+[2024-07-04T08:48:17.135+0000] {processor.py:161} INFO - Started process (PID=135) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:48:17.144+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:48:17.144+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:48:17.144+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:48:17.149+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:48:17.163+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:48:17.163+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:48:17.172+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:48:17.172+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:48:17.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.059 seconds
+[2024-07-04T08:48:47.348+0000] {processor.py:161} INFO - Started process (PID=146) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:48:47.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:48:47.349+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:48:47.349+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:48:47.353+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:48:47.367+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:48:47.367+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:48:47.377+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:48:47.377+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:48:47.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.040 seconds
+[2024-07-04T08:49:17.569+0000] {processor.py:161} INFO - Started process (PID=157) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:49:17.577+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:49:17.578+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:49:17.578+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:49:17.583+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:49:17.598+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:49:17.598+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:49:17.608+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:49:17.608+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:49:17.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.056 seconds
+[2024-07-04T08:49:47.812+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:49:47.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:49:47.822+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:49:47.822+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:49:47.827+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:49:47.841+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:49:47.841+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:49:47.851+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:49:47.851+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:49:47.861+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.052 seconds
+[2024-07-04T08:50:18.009+0000] {processor.py:161} INFO - Started process (PID=179) to work on /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:50:18.010+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/DAG_ScrPosEsK.py for tasks to queue
+[2024-07-04T08:50:18.010+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:50:18.010+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:50:18.015+0000] {processor.py:840} INFO - DAG(s) 'combined_dag' retrieved from /opt/airflow/dags/DAG_ScrPosEsK.py
+[2024-07-04T08:50:18.029+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:50:18.029+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-04T08:50:18.038+0000] {logging_mixin.py:188} INFO - [2024-07-04T08:50:18.038+0000] {dag.py:3954} INFO - Setting next_dagrun for combined_dag to 2024-07-02 00:00:00+00:00, run_after=2024-07-04 00:00:00+00:00
+[2024-07-04T08:50:18.046+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/DAG_ScrPosEsK.py took 0.040 seconds

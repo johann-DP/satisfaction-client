@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.Tokenizer","timestamp":1719359348630,"sparkVersion":"3.5.1","uid":"Tokenizer_9e0d05380267","paramMap":{"outputCol":"SentimentWords","inputCol":"SentimentText"},"defaultParamMap":{"outputCol":"Tokenizer_9e0d05380267__output"}}

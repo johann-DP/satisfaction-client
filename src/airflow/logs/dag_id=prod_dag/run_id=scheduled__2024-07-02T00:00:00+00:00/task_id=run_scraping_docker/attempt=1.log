@@ -1,0 +1,478 @@
+[2024-07-05T09:28:10.633+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T09:28:10.645+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [queued]>
+[2024-07-05T09:28:10.648+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [queued]>
+[2024-07-05T09:28:10.649+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-05T09:28:10.656+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_scraping_docker> on 2024-07-02 00:00:00+00:00
+[2024-07-05T09:28:10.663+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=129) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T09:28:10.664+0000] {standard_task_runner.py:63} INFO - Started process 130 to run task
+[2024-07-05T09:28:10.664+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'run_scraping_docker', 'scheduled__2024-07-02T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmpt9ple8ql']
+[2024-07-05T09:28:10.665+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask run_scraping_docker
+[2024-07-05T09:28:10.688+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [running]> on host d74fc8b8969f
+[2024-07-05T09:28:10.740+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='run_scraping_docker' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T00:00:00+00:00'
+[2024-07-05T09:28:10.740+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T09:28:10.766+0000] {docker.py:493} INFO - Pulling docker image bost67dst/scraping_light
+[2024-07-05T09:28:12.450+0000] {docker.py:507} INFO - latest: Pulling from bost67dst/scraping_light
+[2024-07-05T09:28:12.450+0000] {docker.py:507} INFO - f7b75fe1f735: Pulling fs layer
+[2024-07-05T09:28:12.450+0000] {docker.py:507} INFO - 6fb769904474: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - 4cbb06924c13: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - a6c4281f07e9: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - 9de021d8b315: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - a05a93941833: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - d7db652c556d: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - 95d200139452: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - a09c12fb8087: Pulling fs layer
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - 4cbb06924c13: Waiting
+[2024-07-05T09:28:12.451+0000] {docker.py:507} INFO - 702bcdfc3906: Pulling fs layer
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - a6c4281f07e9: Waiting
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - 9de021d8b315: Waiting
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - 40c97a8703b3: Pulling fs layer
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - a05a93941833: Waiting
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - b8d5102259b0: Pulling fs layer
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - d7db652c556d: Waiting
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - 95d200139452: Waiting
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - a09c12fb8087: Waiting
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - 5d3e0119aa5c: Pulling fs layer
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - 702bcdfc3906: Waiting
+[2024-07-05T09:28:12.452+0000] {docker.py:507} INFO - 40c97a8703b3: Waiting
+[2024-07-05T09:28:12.453+0000] {docker.py:507} INFO - b8d5102259b0: Waiting
+[2024-07-05T09:28:12.453+0000] {docker.py:507} INFO - 4f4fb700ef54: Pulling fs layer
+[2024-07-05T09:28:12.453+0000] {docker.py:507} INFO - 5d3e0119aa5c: Waiting
+[2024-07-05T09:28:12.453+0000] {docker.py:507} INFO - 4f4fb700ef54: Waiting
+[2024-07-05T09:28:12.800+0000] {docker.py:507} INFO - 6fb769904474: Downloading
+[2024-07-05T09:28:12.816+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Downloading
+[2024-07-05T09:28:12.820+0000] {docker.py:507} INFO - f7b75fe1f735: Downloading
+[2024-07-05T09:28:12.860+0000] {docker.py:507} INFO - 6fb769904474: Download complete
+[2024-07-05T09:28:12.971+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Verifying Checksum
+[2024-07-05T09:28:12.971+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Download complete
+[2024-07-05T09:28:13.080+0000] {docker.py:507} INFO - f7b75fe1f735: Download complete
+[2024-07-05T09:28:13.089+0000] {docker.py:507} INFO - f7b75fe1f735: Extracting
+[2024-07-05T09:28:13.246+0000] {docker.py:507} INFO - 4cbb06924c13: Verifying Checksum
+[2024-07-05T09:28:13.246+0000] {docker.py:507} INFO - 4cbb06924c13: Download complete
+[2024-07-05T09:28:13.346+0000] {docker.py:507} INFO - a6c4281f07e9: Downloading
+[2024-07-05T09:28:13.396+0000] {docker.py:507} INFO - a6c4281f07e9: Verifying Checksum
+[2024-07-05T09:28:13.396+0000] {docker.py:507} INFO - a6c4281f07e9: Download complete
+[2024-07-05T09:28:13.480+0000] {docker.py:507} INFO - 9de021d8b315: Downloading
+[2024-07-05T09:28:13.547+0000] {docker.py:507} INFO - 9de021d8b315: Download complete
+[2024-07-05T09:28:13.605+0000] {docker.py:507} INFO - a05a93941833: Downloading
+[2024-07-05T09:28:13.665+0000] {docker.py:507} INFO - a05a93941833: Verifying Checksum
+[2024-07-05T09:28:13.665+0000] {docker.py:507} INFO - a05a93941833: Download complete
+[2024-07-05T09:28:13.740+0000] {docker.py:507} INFO - f7b75fe1f735: Pull complete
+[2024-07-05T09:28:13.752+0000] {docker.py:507} INFO - 6fb769904474: Extracting
+[2024-07-05T09:28:13.756+0000] {docker.py:507} INFO - d7db652c556d: Downloading
+[2024-07-05T09:28:13.794+0000] {docker.py:507} INFO - d7db652c556d: Download complete
+[2024-07-05T09:28:13.838+0000] {docker.py:507} INFO - 6fb769904474: Pull complete
+[2024-07-05T09:28:13.851+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Extracting
+[2024-07-05T09:28:13.905+0000] {docker.py:507} INFO - 95d200139452: Downloading
+[2024-07-05T09:28:13.905+0000] {docker.py:507} INFO - 95d200139452: Verifying Checksum
+[2024-07-05T09:28:13.905+0000] {docker.py:507} INFO - 95d200139452: Download complete
+[2024-07-05T09:28:14.012+0000] {docker.py:507} INFO - a09c12fb8087: Downloading
+[2024-07-05T09:28:14.012+0000] {docker.py:507} INFO - a09c12fb8087: Verifying Checksum
+[2024-07-05T09:28:14.012+0000] {docker.py:507} INFO - a09c12fb8087: Download complete
+[2024-07-05T09:28:14.060+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Pull complete
+[2024-07-05T09:28:14.073+0000] {docker.py:507} INFO - 4cbb06924c13: Extracting
+[2024-07-05T09:28:14.119+0000] {docker.py:507} INFO - 4cbb06924c13: Pull complete
+[2024-07-05T09:28:14.131+0000] {docker.py:507} INFO - a6c4281f07e9: Extracting
+[2024-07-05T09:28:14.148+0000] {docker.py:507} INFO - 702bcdfc3906: Verifying Checksum
+[2024-07-05T09:28:14.148+0000] {docker.py:507} INFO - 702bcdfc3906: Download complete
+[2024-07-05T09:28:14.259+0000] {docker.py:507} INFO - 40c97a8703b3: Verifying Checksum
+[2024-07-05T09:28:14.259+0000] {docker.py:507} INFO - 40c97a8703b3: Download complete
+[2024-07-05T09:28:14.274+0000] {docker.py:507} INFO - a6c4281f07e9: Pull complete
+[2024-07-05T09:28:14.286+0000] {docker.py:507} INFO - 9de021d8b315: Extracting
+[2024-07-05T09:28:14.363+0000] {docker.py:507} INFO - b8d5102259b0: Downloading
+[2024-07-05T09:28:14.363+0000] {docker.py:507} INFO - b8d5102259b0: Verifying Checksum
+[2024-07-05T09:28:14.363+0000] {docker.py:507} INFO - b8d5102259b0: Download complete
+[2024-07-05T09:28:14.496+0000] {docker.py:507} INFO - 5d3e0119aa5c: Downloading
+[2024-07-05T09:28:14.497+0000] {docker.py:507} INFO - 5d3e0119aa5c: Verifying Checksum
+[2024-07-05T09:28:14.497+0000] {docker.py:507} INFO - 5d3e0119aa5c: Download complete
+[2024-07-05T09:28:14.511+0000] {docker.py:507} INFO - 9de021d8b315: Pull complete
+[2024-07-05T09:28:14.524+0000] {docker.py:507} INFO - a05a93941833: Extracting
+[2024-07-05T09:28:14.606+0000] {docker.py:507} INFO - a05a93941833: Pull complete
+[2024-07-05T09:28:14.612+0000] {docker.py:507} INFO - 4f4fb700ef54: Verifying Checksum
+[2024-07-05T09:28:14.612+0000] {docker.py:507} INFO - 4f4fb700ef54: Download complete
+[2024-07-05T09:28:14.619+0000] {docker.py:507} INFO - d7db652c556d: Extracting
+[2024-07-05T09:28:14.691+0000] {docker.py:507} INFO - d7db652c556d: Pull complete
+[2024-07-05T09:28:14.704+0000] {docker.py:507} INFO - 95d200139452: Extracting
+[2024-07-05T09:28:14.754+0000] {docker.py:507} INFO - 95d200139452: Pull complete
+[2024-07-05T09:28:14.766+0000] {docker.py:507} INFO - a09c12fb8087: Extracting
+[2024-07-05T09:28:14.816+0000] {docker.py:507} INFO - a09c12fb8087: Pull complete
+[2024-07-05T09:28:14.828+0000] {docker.py:507} INFO - 702bcdfc3906: Extracting
+[2024-07-05T09:28:14.878+0000] {docker.py:507} INFO - 702bcdfc3906: Pull complete
+[2024-07-05T09:28:14.894+0000] {docker.py:507} INFO - 40c97a8703b3: Extracting
+[2024-07-05T09:28:14.946+0000] {docker.py:507} INFO - 40c97a8703b3: Pull complete
+[2024-07-05T09:28:14.959+0000] {docker.py:507} INFO - b8d5102259b0: Extracting
+[2024-07-05T09:28:15.005+0000] {docker.py:507} INFO - b8d5102259b0: Pull complete
+[2024-07-05T09:28:15.017+0000] {docker.py:507} INFO - 5d3e0119aa5c: Extracting
+[2024-07-05T09:28:15.067+0000] {docker.py:507} INFO - 5d3e0119aa5c: Pull complete
+[2024-07-05T09:28:15.079+0000] {docker.py:507} INFO - 4f4fb700ef54: Extracting
+[2024-07-05T09:28:15.130+0000] {docker.py:507} INFO - 4f4fb700ef54: Pull complete
+[2024-07-05T09:28:15.161+0000] {docker.py:502} INFO - Digest: sha256:962f60c3d7a4332526f01b1a3cded48766c3178cad4b6f1b775c29a27433e2a7
+[2024-07-05T09:28:15.172+0000] {docker.py:502} INFO - Status: Downloaded newer image for bost67dst/scraping_light:latest
+[2024-07-05T09:28:15.181+0000] {docker.py:366} INFO - Starting docker container from image bost67dst/scraping_light
+[2024-07-05T09:28:25.770+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-07-05T09:28:25.771+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-05T09:28:25.772+0000] {process_utils.py:132} INFO - Sending 15 to group 130. PIDs of all processes in the group: [130]
+[2024-07-05T09:28:25.772+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 130
+[2024-07-05T09:28:25.772+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-05T09:28:25.772+0000] {docker.py:528} INFO - Stopping docker container
+[2024-07-05T09:28:35.966+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T09:28:36.007+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=130, status='terminated', exitcode=0, started='09:28:09') (130) terminated with exit code 0
+[2024-07-05T09:41:57.342+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T09:41:57.356+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [queued]>
+[2024-07-05T09:41:57.359+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [queued]>
+[2024-07-05T09:41:57.359+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-05T09:41:57.368+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_scraping_docker> on 2024-07-02 00:00:00+00:00
+[2024-07-05T09:41:57.376+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=65) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T09:41:57.376+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'run_scraping_docker', 'scheduled__2024-07-02T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmpusn70jx3']
+[2024-07-05T09:41:57.377+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask run_scraping_docker
+[2024-07-05T09:41:57.377+0000] {standard_task_runner.py:63} INFO - Started process 68 to run task
+[2024-07-05T09:41:57.402+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [running]> on host d1b8fc7d37d2
+[2024-07-05T09:41:57.450+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='run_scraping_docker' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T00:00:00+00:00'
+[2024-07-05T09:41:57.450+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T09:41:57.479+0000] {docker.py:366} INFO - Starting docker container from image bost67dst/scraping_light
+[2024-07-05T09:42:08.814+0000] {docker.py:436} INFO - SCRAPING START
+bank Companies Data extraction complete and saved to JSON.
+===================================================================================
+Reviews data extraction for all companies starts:
+===================================================================================
+
+
+*****************************************************************
+Reviews data extraction for company_id: www.younited-credit.com
+*****************************************************************
+
+
+company_id: www.younited-credit.com  page: 1
+company_id: www.younited-credit.com  page: 2
+
+
+Company data extraction time duration : 0.862860918045044 seconds for 2 pages
+Reviews Data extraction for company_id www.younited-credit.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: cibformation.fr
+*****************************************************************
+
+
+company_id: cibformation.fr  page: 1
+company_id: cibformation.fr  page: 2
+
+
+Company data extraction time duration : 0.8088338375091553 seconds for 2 pages
+Reviews Data extraction for company_id cibformation.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: cofidis.fr
+*****************************************************************
+
+
+company_id: cofidis.fr  page: 1
+company_id: cofidis.fr  page: 2
+
+
+Company data extraction time duration : 0.18768572807312012 seconds for 2 pages
+Reviews Data extraction for company_id cofidis.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: qonto.com
+*****************************************************************
+
+
+company_id: qonto.com  page: 1
+company_id: qonto.com  page: 2
+
+
+Company data extraction time duration : 0.8130908012390137 seconds for 2 pages
+Reviews Data extraction for company_id qonto.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: pixpay.eu
+*****************************************************************
+
+
+company_id: pixpay.eu  page: 1
+company_id: pixpay.eu  page: 2
+
+
+Company data extraction time duration : 1.306077480316162 seconds for 2 pages
+Reviews Data extraction for company_id pixpay.eu complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: pennypet.io
+*****************************************************************
+
+
+company_id: pennypet.io  page: 1
+company_id: pennypet.io  page: 2
+
+
+Company data extraction time duration : 1.563230276107788 seconds for 2 pages
+Reviews Data extraction for company_id pennypet.io complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: shine.fr
+*****************************************************************
+
+
+company_id: shine.fr  page: 1
+company_id: shine.fr  page: 2
+
+
+Company data extraction time duration : 0.180924654006958 seconds for 2 pages
+Reviews Data extraction for company_id shine.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: moneywalkie.com
+*****************************************************************
+
+
+company_id: moneywalkie.com  page: 1
+company_id: moneywalkie.com  page: 2
+
+
+Company data extraction time duration : 0.6739742755889893 seconds for 2 pages
+Reviews Data extraction for company_id moneywalkie.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: anyti.me
+*****************************************************************
+
+
+company_id: anyti.me  page: 1
+company_id: anyti.me  page: 2
+
+
+Company data extraction time duration : 0.8584327697753906 seconds for 2 pages
+Reviews Data extraction for company_id anyti.me complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: boursobank.com
+*****************************************************************
+
+
+company_id: boursobank.com  page: 1
+company_id: boursobank.com  page: 2
+
+
+Company data extraction time duration : 0.17308855056762695 seconds for 2 pages
+Reviews Data extraction for company_id boursobank.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: blank.app
+*****************************************************************
+
+
+company_id: blank.app  page: 1
+company_id: blank.app  page: 2
+
+
+Company data extraction time duration : 0.18448495864868164 seconds for 2 pages
+Reviews Data extraction for company_id blank.app complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: propulsebyca.fr
+*****************************************************************
+
+
+company_id: propulsebyca.fr  page: 1
+company_id: propulsebyca.fr  page: 2
+
+
+Company data extraction time duration : 0.4377932548522949 seconds for 2 pages
+Reviews Data extraction for company_id propulsebyca.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: www.monabanq.com
+*****************************************************************
+
+
+company_id: www.monabanq.com  page: 1
+company_id: www.monabanq.com  page: 2
+
+
+Company data extraction time duration : 0.1826186180114746 seconds for 2 pages
+Reviews Data extraction for company_id www.monabanq.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: fortuneo.fr
+*****************************************************************
+
+
+company_id: fortuneo.fr  page: 1
+company_id: fortuneo.fr  page: 2
+
+
+Company data extraction time duration : 0.18210673332214355 seconds for 2 pages
+Reviews Data extraction for company_id fortuneo.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: helios.do
+*****************************************************************
+
+
+company_id: helios.do  page: 1
+company_id: helios.do  page: 2
+
+
+Company data extraction time duration : 0.4178943634033203 seconds for 2 pages
+Reviews Data extraction for company_id helios.do complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: immopret.fr
+*****************************************************************
+
+
+company_id: immopret.fr  page: 1
+company_id: immopret.fr  page: 2
+
+
+Company data extraction time duration : 0.18987178802490234 seconds for 2 pages
+Reviews Data extraction for company_id immopret.fr complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: www.francescpi.com
+*****************************************************************
+
+
+company_id: www.francescpi.com  page: 1
+company_id: www.francescpi.com  page: 2
+
+
+Company data extraction time duration : 0.2758147716522217 seconds for 2 pages
+Reviews Data extraction for company_id www.francescpi.com complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: cofidis.pt
+*****************************************************************
+
+
+company_id: cofidis.pt  page: 1
+company_id: cofidis.pt  page: 2
+
+
+Company data extraction time duration : 0.5086658000946045 seconds for 2 pages
+Reviews Data extraction for company_id cofidis.pt complete and saved to JSON.
+*****************************************************************
+Reviews data extraction for company_id: 01banque-en-ligne.fr
+*****************************************************************
+
+
+company_id: 01banque-en-ligne.fr  page: 1
+company_id: 01banque-en-ligne.fr  page: 2
+
+
+Company data extraction time duration : 0.44144344329833984 seconds for 2 pages
+[2024-07-05T09:42:12.494+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-07-05T09:42:12.494+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-05T09:42:12.495+0000] {process_utils.py:132} INFO - Sending 15 to group 68. PIDs of all processes in the group: [68]
+[2024-07-05T09:42:12.495+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 68
+[2024-07-05T09:42:12.496+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-05T09:42:12.496+0000] {docker.py:528} INFO - Stopping docker container
+[2024-07-05T09:42:15.860+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T09:42:15.909+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=68, status='terminated', exitcode=0, started='09:41:56') (68) terminated with exit code 0
+[2024-07-05T10:33:09.950+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T10:33:09.962+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [queued]>
+[2024-07-05T10:33:09.965+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [queued]>
+[2024-07-05T10:33:09.966+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-05T10:33:09.974+0000] {taskinstance.py:2330} INFO - Executing <Task(DockerOperator): run_scraping_docker> on 2024-07-02 00:00:00+00:00
+[2024-07-05T10:33:09.984+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=72) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T10:33:09.985+0000] {standard_task_runner.py:63} INFO - Started process 75 to run task
+[2024-07-05T10:33:09.985+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'prod_dag', 'run_scraping_docker', 'scheduled__2024-07-02T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/DAG_prod.py', '--cfg-path', '/tmp/tmp488pq5j3']
+[2024-07-05T10:33:09.985+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask run_scraping_docker
+[2024-07-05T10:33:10.011+0000] {task_command.py:426} INFO - Running <TaskInstance: prod_dag.run_scraping_docker scheduled__2024-07-02T00:00:00+00:00 [running]> on host 39db74c4aadf
+[2024-07-05T10:33:10.062+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='prod_dag' AIRFLOW_CTX_TASK_ID='run_scraping_docker' AIRFLOW_CTX_EXECUTION_DATE='2024-07-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-02T00:00:00+00:00'
+[2024-07-05T10:33:10.062+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T10:33:10.089+0000] {docker.py:493} INFO - Pulling docker image bost67dst/scraping_light
+[2024-07-05T10:33:11.349+0000] {docker.py:507} INFO - latest: Pulling from bost67dst/scraping_light
+[2024-07-05T10:33:11.349+0000] {docker.py:507} INFO - f7b75fe1f735: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - 6fb769904474: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - 4cbb06924c13: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - a6c4281f07e9: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - 9de021d8b315: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - a05a93941833: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - d7db652c556d: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - 95d200139452: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - a09c12fb8087: Pulling fs layer
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - 4cbb06924c13: Waiting
+[2024-07-05T10:33:11.350+0000] {docker.py:507} INFO - 702bcdfc3906: Pulling fs layer
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - a6c4281f07e9: Waiting
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - 40c97a8703b3: Pulling fs layer
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - b8d5102259b0: Pulling fs layer
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - 95d200139452: Waiting
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - 9de021d8b315: Waiting
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - 702bcdfc3906: Waiting
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - a09c12fb8087: Waiting
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - d7db652c556d: Waiting
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - a05a93941833: Waiting
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - 5d3e0119aa5c: Pulling fs layer
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - 40c97a8703b3: Waiting
+[2024-07-05T10:33:11.351+0000] {docker.py:507} INFO - 4f4fb700ef54: Pulling fs layer
+[2024-07-05T10:33:11.352+0000] {docker.py:507} INFO - 5d3e0119aa5c: Waiting
+[2024-07-05T10:33:11.352+0000] {docker.py:507} INFO - b8d5102259b0: Waiting
+[2024-07-05T10:33:11.352+0000] {docker.py:507} INFO - 4f4fb700ef54: Waiting
+[2024-07-05T10:33:11.688+0000] {docker.py:507} INFO - 6fb769904474: Downloading
+[2024-07-05T10:33:11.726+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Downloading
+[2024-07-05T10:33:11.726+0000] {docker.py:507} INFO - f7b75fe1f735: Downloading
+[2024-07-05T10:33:11.729+0000] {docker.py:507} INFO - 6fb769904474: Verifying Checksum
+[2024-07-05T10:33:11.729+0000] {docker.py:507} INFO - 6fb769904474: Download complete
+[2024-07-05T10:33:11.906+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Verifying Checksum
+[2024-07-05T10:33:11.906+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Download complete
+[2024-07-05T10:33:11.975+0000] {docker.py:507} INFO - f7b75fe1f735: Verifying Checksum
+[2024-07-05T10:33:11.976+0000] {docker.py:507} INFO - f7b75fe1f735: Download complete
+[2024-07-05T10:33:11.983+0000] {docker.py:507} INFO - f7b75fe1f735: Extracting
+[2024-07-05T10:33:12.102+0000] {docker.py:507} INFO - 4cbb06924c13: Downloading
+[2024-07-05T10:33:12.102+0000] {docker.py:507} INFO - 4cbb06924c13: Verifying Checksum
+[2024-07-05T10:33:12.103+0000] {docker.py:507} INFO - 4cbb06924c13: Download complete
+[2024-07-05T10:33:12.341+0000] {docker.py:507} INFO - 9de021d8b315: Downloading
+[2024-07-05T10:33:12.417+0000] {docker.py:507} INFO - 9de021d8b315: Download complete
+[2024-07-05T10:33:12.419+0000] {docker.py:507} INFO - a6c4281f07e9: Downloading
+[2024-07-05T10:33:12.464+0000] {docker.py:507} INFO - a6c4281f07e9: Verifying Checksum
+[2024-07-05T10:33:12.465+0000] {docker.py:507} INFO - a6c4281f07e9: Download complete
+[2024-07-05T10:33:12.466+0000] {docker.py:507} INFO - a05a93941833: Downloading
+[2024-07-05T10:33:12.519+0000] {docker.py:507} INFO - a05a93941833: Download complete
+[2024-07-05T10:33:12.666+0000] {docker.py:507} INFO - f7b75fe1f735: Pull complete
+[2024-07-05T10:33:12.678+0000] {docker.py:507} INFO - 6fb769904474: Extracting
+[2024-07-05T10:33:12.770+0000] {docker.py:507} INFO - 6fb769904474: Pull complete
+[2024-07-05T10:33:12.783+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Extracting
+[2024-07-05T10:33:12.806+0000] {docker.py:507} INFO - 95d200139452: Downloading
+[2024-07-05T10:33:12.807+0000] {docker.py:507} INFO - 95d200139452: Download complete
+[2024-07-05T10:33:12.869+0000] {docker.py:507} INFO - d7db652c556d: Downloading
+[2024-07-05T10:33:12.881+0000] {docker.py:507} INFO - a09c12fb8087: Download complete
+[2024-07-05T10:33:12.911+0000] {docker.py:507} INFO - d7db652c556d: Download complete
+[2024-07-05T10:33:13.020+0000] {docker.py:507} INFO - 6b4a7fcc3dd3: Pull complete
+[2024-07-05T10:33:13.032+0000] {docker.py:507} INFO - 4cbb06924c13: Extracting
+[2024-07-05T10:33:13.081+0000] {docker.py:507} INFO - 4cbb06924c13: Pull complete
+[2024-07-05T10:33:13.093+0000] {docker.py:507} INFO - a6c4281f07e9: Extracting
+[2024-07-05T10:33:13.158+0000] {docker.py:507} INFO - 702bcdfc3906: Downloading
+[2024-07-05T10:33:13.232+0000] {docker.py:507} INFO - 40c97a8703b3: Downloading
+[2024-07-05T10:33:13.233+0000] {docker.py:507} INFO - 40c97a8703b3: Verifying Checksum
+[2024-07-05T10:33:13.233+0000] {docker.py:507} INFO - 40c97a8703b3: Download complete
+[2024-07-05T10:33:13.247+0000] {docker.py:507} INFO - a6c4281f07e9: Pull complete
+[2024-07-05T10:33:13.260+0000] {docker.py:507} INFO - b8d5102259b0: Downloading
+[2024-07-05T10:33:13.260+0000] {docker.py:507} INFO - b8d5102259b0: Verifying Checksum
+[2024-07-05T10:33:13.261+0000] {docker.py:507} INFO - b8d5102259b0: Download complete
+[2024-07-05T10:33:13.261+0000] {docker.py:507} INFO - 9de021d8b315: Extracting
+[2024-07-05T10:33:13.489+0000] {docker.py:507} INFO - 9de021d8b315: Pull complete
+[2024-07-05T10:33:13.501+0000] {docker.py:507} INFO - a05a93941833: Extracting
+[2024-07-05T10:33:13.507+0000] {docker.py:507} INFO - 5d3e0119aa5c: Verifying Checksum
+[2024-07-05T10:33:13.508+0000] {docker.py:507} INFO - 5d3e0119aa5c: Download complete
+[2024-07-05T10:33:13.568+0000] {docker.py:507} INFO - 4f4fb700ef54: Downloading
+[2024-07-05T10:33:13.568+0000] {docker.py:507} INFO - 4f4fb700ef54: Download complete
+[2024-07-05T10:33:13.598+0000] {docker.py:507} INFO - a05a93941833: Pull complete
+[2024-07-05T10:33:13.615+0000] {docker.py:507} INFO - d7db652c556d: Extracting
+[2024-07-05T10:33:13.689+0000] {docker.py:507} INFO - d7db652c556d: Pull complete
+[2024-07-05T10:33:13.701+0000] {docker.py:507} INFO - 95d200139452: Extracting
+[2024-07-05T10:33:13.750+0000] {docker.py:507} INFO - 95d200139452: Pull complete
+[2024-07-05T10:33:13.763+0000] {docker.py:507} INFO - a09c12fb8087: Extracting
+[2024-07-05T10:33:13.811+0000] {docker.py:507} INFO - a09c12fb8087: Pull complete
+[2024-07-05T10:33:13.823+0000] {docker.py:507} INFO - 702bcdfc3906: Extracting
+[2024-07-05T10:33:13.872+0000] {docker.py:507} INFO - 702bcdfc3906: Pull complete
+[2024-07-05T10:33:13.884+0000] {docker.py:507} INFO - 40c97a8703b3: Extracting
+[2024-07-05T10:33:13.932+0000] {docker.py:507} INFO - 40c97a8703b3: Pull complete
+[2024-07-05T10:33:13.945+0000] {docker.py:507} INFO - b8d5102259b0: Extracting
+[2024-07-05T10:33:13.993+0000] {docker.py:507} INFO - b8d5102259b0: Pull complete
+[2024-07-05T10:33:14.006+0000] {docker.py:507} INFO - 5d3e0119aa5c: Extracting
+[2024-07-05T10:33:14.057+0000] {docker.py:507} INFO - 5d3e0119aa5c: Pull complete
+[2024-07-05T10:33:14.069+0000] {docker.py:507} INFO - 4f4fb700ef54: Extracting
+[2024-07-05T10:33:14.118+0000] {docker.py:507} INFO - 4f4fb700ef54: Pull complete
+[2024-07-05T10:33:14.148+0000] {docker.py:502} INFO - Digest: sha256:962f60c3d7a4332526f01b1a3cded48766c3178cad4b6f1b775c29a27433e2a7
+[2024-07-05T10:33:14.154+0000] {docker.py:502} INFO - Status: Image is up to date for bost67dst/scraping_light:latest
+[2024-07-05T10:33:14.161+0000] {docker.py:366} INFO - Starting docker container from image bost67dst/scraping_light
+[2024-07-05T10:33:30.137+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-07-05T10:33:30.137+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-05T10:33:30.138+0000] {process_utils.py:132} INFO - Sending 15 to group 75. PIDs of all processes in the group: [75]
+[2024-07-05T10:33:30.138+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 75
+[2024-07-05T10:33:30.138+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-05T10:33:30.138+0000] {docker.py:528} INFO - Stopping docker container
+[2024-07-05T10:33:40.341+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T10:33:40.361+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=75, status='terminated', exitcode=0, started='10:33:09') (75) terminated with exit code 0

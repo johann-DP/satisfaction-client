@@ -1,0 +1,10 @@
+id: Jt38MJAB3LW2OhfAdn0Z, text: Très fluide comme application et aucun problème, prediction: 5.0
+id: J938MJAB3LW2OhfAdn0Z, text: Facile d utilisation et simple pour connaître le solde restant, prediction: 5.0
+id: KN38MJAB3LW2OhfAdn0Z, text: Orange bank m'a permis d'acheter 1 iPhone tout en douceur financièrement, prediction: 5.0
+id: Kd38MJAB3LW2OhfAdn0Z, text: Une bonne banque toujours des réponses à nos questions, prediction: 5.0
+id: Kt38MJAB3LW2OhfAdn0Z, text: Comme je vous expliqué sur le dessus l'avis, prediction: 5.0
+id: K938MJAB3LW2OhfAdn0Z, text: Communication bancaire fluide et claire, prediction: 5.0
+id: LN38MJAB3LW2OhfAdn0Z, text: Pas facile pour vous avoir au téléphone  mais  avec cette  je peux passer des commandes en ligne sans problème  et retirer sans problème, prediction: 2.0
+id: Ld38MJAB3LW2OhfAdn0Z, text: Simplicité des démarches, et réactif à notre demande..., prediction: 5.0
+id: Lt38MJAB3LW2OhfAdn0Z, text: J'aime l'innovation que vous apportez, prediction: 5.0
+id: L938MJAB3LW2OhfAdn0Z, text: Tout es bien sauf  pour  les mini  crédit, prediction: 2.0
